@@ -1,6 +1,6 @@
 package com.th.purchase.inquiry.service;
 
-import com.th.purchase.inquiry.dto.UserAuditRq;
+import com.th.common.UserAuditRq;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jms.core.JmsTemplate;

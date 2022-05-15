@@ -1,6 +1,6 @@
 package com.th.purchase.inquiry.service;
 
-import com.th.purchase.inquiry.dto.UserAuditRq;
+import com.th.common.UserAuditRq;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
