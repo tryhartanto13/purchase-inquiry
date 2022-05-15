@@ -14,5 +14,4 @@ public class UserAuditRq implements Serializable {
     private String refNo;
     private String activity;
     private String result;
-    private String request;
 }

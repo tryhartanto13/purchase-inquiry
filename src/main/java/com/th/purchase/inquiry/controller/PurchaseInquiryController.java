@@ -6,7 +6,10 @@ import com.th.purchase.inquiry.service.PurchaseInquiryService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping("/v1")
@@ -18,7 +21,7 @@ public class PurchaseInquiryController {
 
     @PostMapping(value = "/inquiry")
     @ResponseBody
-    public PurchaseInqRs inquiry(@RequestBody PurchaseInqRq purchaseInqRq){
+    public PurchaseInqRs inquiry(@RequestBody PurchaseInqRq purchaseInqRq) {
         return piService.doInquiry(purchaseInqRq);
     }
 

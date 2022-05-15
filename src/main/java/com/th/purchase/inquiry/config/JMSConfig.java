@@ -17,7 +17,7 @@ public class JMSConfig {
     private String brokerUrl;
 
     @Bean
-    public ConnectionFactory amqConnectionFactory(){
+    public ConnectionFactory amqConnectionFactory() {
         ActiveMQConnectionFactory activeMQConnectionFactory = new ActiveMQConnectionFactory();
         activeMQConnectionFactory.setBrokerURL(brokerUrl);
         activeMQConnectionFactory.setSendTimeout(1000);
@@ -31,5 +31,7 @@ public class JMSConfig {
     }
 
     @Bean
-    public JmsTemplate jmsTemplate() { return new JmsTemplate(cachingConnectionFactory());}
+    public JmsTemplate jmsTemplate() {
+        return new JmsTemplate(cachingConnectionFactory());
+    }
 }
